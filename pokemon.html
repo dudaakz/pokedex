@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémons</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Pokédex</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="pokemon.html">Pokémons</a></li>
+                <li class="nav-item"><a class="nav-link" href="treinador.html">Treinador</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Pokémons da Região Kanto</h1>
+        <div class="row">
+            <!-- Exemplo de Pokémon -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://example.com/bulbasaur.jpg" class="card-img-top" alt="Bulbasaur">
+                    <div class="card-body">
+                        <h5 class="card-title">Bulbasaur</h5>
+                        <p class="card-text">Tipo: Planta/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/metapod.png" class="card-img-top" alt="Metapod">
+                    <div class="card-body">
+                        <h5 class="card-title">Metapod</h5>
+                        <p class="card-text">Tipo: Inseto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/butterfree.png" class="card-img-top" alt="Butterfree">
+                    <div class="card-body">
+                        <h5 class="card-title">Butterfree</h5>
+                        <p class="card-text">Tipo: Inseto/Voador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/caterpie.png" class="card-img-top" alt="Caterpie">
+                    <div class="card-body">
+                        <h5 class="card-title">Caterpie</h5>
+                        <p class="card-text">Tipo: Inseto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/pidgey.png" class="card-img-top" alt="Pidgey">
+                    <div class="card-body">
+                        <h5 class="card-title">Pidgey</h5>
+                        <p class="card-text">Tipo: Normal/Voador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/pidgeotto.png" class="card-img-top" alt="Pidgeotto">
+                    <div class="card-body">
+                        <h5 class="card-title">Pidgeotto</h5>
+                        <p class="card-text">Tipo: Normal/Voador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/pidgeot.png" class="card-img-top" alt="Pidgeot">
+                    <div class="card-body">
+                        <h5 class="card-title">Pidgeot</h5>
+                        <p class="card-text">Tipo: Normal/Voador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/rattata.png" class="card-img-top" alt="Rattata">
+                    <div class="card-body">
+                        <h5 class="card-title">Rattata</h5>
+                        <p class="card-text">Tipo: Normal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/raticate.png" class="card-img-top" alt="Raticate">
+                    <div class="card-body">
+                        <h5 class="card-title">Raticate</h5>
+                        <p class="card-text">Tipo: Normal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/spearow.png" class="card-img-top" alt="Spearow">
+                    <div class="card-body">
+                        <h5 class="card-title">Spearow</h5>
+                        <p class="card-text">Tipo: Normal/Voador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/fearow.png" class="card-img-top" alt="Fearow">
+                    <div class="card-body">
+                        <h5 class="card-title">Fearow</h5>
+                        <p class="card-text">Tipo: Normal/Voador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/ekans.png" class="card-img-top" alt="Ekans">
+                    <div class="card-body">
+                        <h5 class="card-title">Ekans</h5>
+                        <p class="card-text">Tipo: Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/arbok.png" class="card-img-top" alt="Arbok">
+                    <div class="card-body">
+                        <h5 class="card-title">Arbok</h5>
+                        <p class="card-text">Tipo: Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/pikachu.png" class="card-img-top" alt="Pikachu">
+                    <div class="card-body">
+                        <h5 class="card-title">Pikachu</h5>
+                        <p class="card-text">Tipo: Elétrico</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/raichu.png" class="card-img-top" alt="Raichu">
+                    <div class="card-body">
+                        <h5 class="card-title">Raichu</h5>
+                        <p class="card-text">Tipo: Elétrico</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/sandshrew.png" class="card-img-top" alt="Sandshrew">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandshrew</h5>
+                        <p class="card-text">Tipo: Terra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/sandslash.png" class="card-img-top" alt="Sandslash">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandslash</h5>
+                        <p class="card-text">Tipo: Terra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/clefairy.png" class="card-img-top" alt="Clefairy">
+                    <div class="card-body">
+                        <h5 class="card-title">Clefairy</h5>
+                        <p class="card-text">Tipo: Fada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/clefable.png" class="card-img-top" alt="Clefable">
+                    <div class="card-body">
+                        <h5 class="card-title">Clefable</h5>
+                        <p class="card-text">Tipo: Fada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/vulpix.png" class="card-img-top" alt="Vulpix">
+                    <div class="card-body">
+                        <h5 class="card-title">Vulpix</h5>
+                        <p class="card-text">Tipo: Fogo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/ninetales.png" class="card-img-top" alt="Ninetales">
+                    <div class="card-body">
+                        <h5 class="card-title">Ninetales</h5>
+                        <p class="card-text">Tipo: Fogo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/jigglypuff.png" class="card-img-top" alt="Jigglypuff">
+                    <div class="card-body">
+                        <h5 class="card-title">Jigglypuff</h5>
+                        <p class="card-text">Tipo: Normal/Fada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/wigglytuff.png" class="card-img-top" alt="Wigglytuff">
+                    <div class="card-body">
+                        <h5 class="card-title">Wigglytuff</h5>
+                        <p class="card-text">Tipo: Normal/Fada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/zubat.png" class="card-img-top" alt="Zubat">
+                    <div class="card-body">
+                        <h5 class="card-title">Zubat</h5>
+                        <p class="card-text">Tipo: Venenoso/Voador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/golbat.png" class="card-img-top" alt="Golbat">
+                    <div class="card-body">
+                        <h5 class="card-title">Golbat</h5>
+                        <p class="card-text">Tipo: Venenoso/Voador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/oddish.png" class="card-img-top" alt="Oddish">
+                    <div class="card-body">
+                        <h5 class="card-title">Oddish</h5>
+                        <p class="card-text">Tipo: Planta/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/gloom.png" class="card-img-top" alt="Gloom">
+                    <div class="card-body">
+                        <h5 class="card-title">Gloom</h5>
+                        <p class="card-text">Tipo: Planta/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/vileplume.png" class="card-img-top" alt="Vileplume">
+                    <div class="card-body">
+                        <h5 class="card-title">Vileplume</h5>
+                        <p class="card-text">Tipo: Planta/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/paris.png" class="card-img-top" alt="Paras">
+                    <div class="card-body">
+                        <h5 class="card-title">Paras</h5>
+                        <p class="card-text">Tipo: Inseto/Planta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/parasect.png" class="card-img-top" alt="Parasect">
+                    <div class="card-body">
+                        <h5 class="card-title">Parasect</h5>
+                        <p class="card-text">Tipo: Inseto/Planta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/venonat.png" class="card-img-top" alt="Venonat">
+                    <div class="card-body">
+                        <h5 class="card-title">Venonat</h5>
+                        <p class="card-text">Tipo: Inseto/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/venomoth.png" class="card-img-top" alt="Venomoth">
+                    <div class="card-body">
+                        <h5 class="card-title">Venomoth</h5>
+                        <p class="card-text">Tipo: Inseto/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/diglett.png" class="card-img-top" alt="Diglett">
+                    <div class="card-body">
+                        <h5 class="card-title">Diglett</h5>
+                        <p class="card-text">Tipo: Terra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/dugtrio.png" class="card-img-top" alt="Dugtrio">
+                    <div class="card-body">
+                        <h5 class="card-title">Dugtrio</h5>
+                        <p class="card-text">Tipo: Terra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/meowth.png" class="card-img-top" alt="Meowth">
+                    <div class="card-body">
+                        <h5 class="card-title">Meowth</h5>
+                        <p class="card-text">Tipo: Normal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/persian.png" class="card-img-top" alt="Persian">
+                    <div class="card-body">
+                        <h5 class="card-title">Persian</h5>
+                        <p class="card-text">Tipo: Normal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/psyduck.png" class="card-img-top" alt="Psyduck">
+                    <div class="card-body">
+                        <h5 class="card-title">Psyduck</h5>
+                        <p class="card-text">Tipo: Água</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/golduck.png" class="card-img-top" alt="Golduck">
+                    <div class="card-body">
+                        <h5 class="card-title">Golduck</h5>
+                        <p class="card-text">Tipo: Água</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/poliwag.png" class="card-img-top" alt="Poliwag">
+                    <div class="card-body">
+                        <h5 class="card-title">Poliwag</h5>
+                        <p class="card-text">Tipo: Água</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/poliwhirl.png" class="card-img-top" alt="Poliwhirl">
+                    <div class="card-body">
+                        <h5 class="card-title">Poliwhirl</h5>
+                        <p class="card-text">Tipo: Água</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/poliwrath.png" class="card-img-top" alt="Poliwrath">
+                    <div class="card-body">
+                        <h5 class="card-title">Poliwrath</h5>
+                        <p class="card-text">Tipo: Água/Lutador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/abra.png" class="card-img-top" alt="Abra">
+                    <div class="card-body">
+                        <h5 class="card-title">Abra</h5>
+                        <p class="card-text">Tipo: Psíquico</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/kadabra.png" class="card-img-top" alt="Kadabra">
+                    <div class="card-body">
+                        <h5 class="card-title">Kadabra</h5>
+                        <p class="card-text">Tipo: Psíquico</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/alakazam.png" class="card-img-top" alt="Alakazam">
+                    <div class="card-body">
+                        <h5 class="card-title">Alakazam</h5>
+                        <p class="card-text">Tipo: Psíquico</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/machop.png" class="card-img-top" alt="Machop">
+                    <div class="card-body">
+                        <h5 class="card-title">Machop</h5>
+                        <p class="card-text">Tipo: Lutador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/machoke.png" class="card-img-top" alt="Machoke">
+                    <div class="card-body">
+                        <h5 class="card-title">Machoke</h5>
+                        <p class="card-text">Tipo: Lutador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/machamp.png" class="card-img-top" alt="Machamp">
+                    <div class="card-body">
+                        <h5 class="card-title">Machamp</h5>
+                        <p class="card-text">Tipo: Lutador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/bellsprout.png" class="card-img-top" alt="Bellsprout">
+                    <div class="card-body">
+                        <h5 class="card-title">Bellsprout</h5>
+                        <p class="card-text">Tipo: Planta/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/weepinbell.png" class="card-img-top" alt="Weepinbell">
+                    <div class="card-body">
+                        <h5 class="card-title">Weep
+                                        <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/weepinbell.png" class="card-img-top" alt="Weepinbell">
+                    <div class="card-body">
+                        <h5 class="card-title">Weepinbell</h5>
+                        <p class="card-text">Tipo: Planta/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/victreebel.png" class="card-img-top" alt="Victreebel">
+                    <div class="card-body">
+                        <h5 class="card-title">Victreebel</h5>
+                        <p class="card-text">Tipo: Planta/Venenoso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/tangela.png" class="card-img-top" alt="Tangela">
+                    <div class="card-body">
+                        <h5 class="card-title">Tangela</h5>
+                        <p class="card-text">Tipo: Planta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/geodude.png" class="card-img-top" alt="Geodude">
+                    <div class="card-body">
+                        <h5 class="card-title">Geodude</h5>
+                        <p class="card-text">Tipo: Rocha/Terra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/graveler.png" class="card-img-top" alt="Graveler">
+                    <div class="card-body">
+                        <h5 class="card-title">Graveler</h5>
+                        <p class="card-text">Tipo: Rocha/Terra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/golem.png" class="card-img-top" alt="Golem">
+                    <div class="card-body">
+                        <h5 class="card-title">Golem</h5>
+                        <p class="card-text">Tipo: Rocha/Terra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/ponyta.png" class="card-img-top" alt="Ponyta">
+                    <div class="card-body">
+                        <h5 class="card-title">Ponyta</h5>
+                        <p class="card-text">Tipo: Fogo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/rapidash.png" class="card-img-top" alt="Rapidash">
+                    <div class="card-body">
+                        <h5 class="card-title">Rapidash</h5>
+                        <p class="card-text">Tipo: Fogo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/slowpoke.png" class="card-img-top" alt="Slowpoke">
+                    <div class="card-body">
+                        <h5 class="card-title">Slowpoke</h5>
+                        <p class="card-text">Tipo: Água/Psíquico</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/slowbro.png" class="card-img-top" alt="Slowbro">
+                    <div class="card-body">
+                        <h5 class="card-title">Slowbro</h5>
+                        <p class="card-text">Tipo: Água/Psíquico</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/kingler.png" class="card-img-top" alt="Kingler">
+                        <div class="card-body">
+                            <h5 class="card-title">Kingler</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/horsea.png" class="card-img-top" alt="Horsea">
+                        <div class="card-body">
+                            <h5 class="card-title">Horsea</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/seadra.png" class="card-img-top" alt="Seadra">
+                        <div class="card-body">
+                            <h5 class="card-title">Seadra</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/goldeen.png" class="card-img-top" alt="Goldeen">
+                        <div class="card-body">
+                            <h5 class="card-title">Goldeen</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/seaking.png" class="card-img-top" alt="Seaking">
+                        <div class="card-body">
+                            <h5 class="card-title">Seaking</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/kingler.png" class="card-img-top" alt="Kingler">
+                        <div class="card-body">
+                            <h5 class="card-title">Kingler</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/horsea.png" class="card-img-top" alt="Horsea">
+                        <div class="card-body">
+                            <h5 class="card-title">Horsea</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/seadra.png" class="card-img-top" alt="Seadra">
+                        <div class="card-body">
+                            <h5 class="card-title">Seadra</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/goldeen.png" class="card-img-top" alt="Goldeen">
+                        <div class="card-body">
+                            <h5 class="card-title">Goldeen</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://img.pokemondb.net/sprites/home/normal/seaking.png" class="card-img-top" alt="Seaking">
+                        <div class="card-body">
+                            <h5 class="card-title">Seaking</h5>
+                            <p class="card-text">Tipo: Água</p>
+                        </div>
+                    </div>
+                </div>
+    
+    </div>
+
+
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Pokédex. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
